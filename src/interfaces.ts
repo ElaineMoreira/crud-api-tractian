@@ -1,5 +1,7 @@
 export interface usuarioPodeCadastrar {
   id: number,
+  nome: string,
+  email: string,
   empresa: string,
   unidade: string,
   ativo: {
@@ -13,7 +15,7 @@ export interface usuarioPodeCadastrar {
   },
 }
 
-export interface usuario extends usuarioPodeCadastrar {
-    nome: string,
-    email: string,
-}
+// export interface usuario extends usuarioPodeCadastrar {
+//     nome: string,
+//     email: string,
+// }
