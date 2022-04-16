@@ -1,16 +1,17 @@
 import { Router } from 'express'
 import { getAllController } from '../controllers/getAllController';
+import { getByIdController } from '../controllers/getByIdController';
 
 const router = Router()
 
-router.get('/', getAllController.GetAll);
+router.get('/all', getAllController.GetAll);
 
-router.get('/', () => {});
+router.get('/all/:id', getByIdController.getById);
 
-router.post('/', () => {});
+router.post('/',);
 
-router.put('/', () => {});
+router.put('/',);
 
-router.delete('/', () => {});
+router.delete('/',);
 
 export default router

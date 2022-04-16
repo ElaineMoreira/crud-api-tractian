@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(router)
 
 const SENHA_SECRETA_ENV = process.env.SECRET_CONNECTION_MONGO
-const PORT = 3333
+const PORT = 3001
 
 mongoose.connect(SENHA_SECRETA_ENV)
 /** se deu certo */
@@ -21,4 +21,4 @@ mongoose.connect(SENHA_SECRETA_ENV)
     console.log("Erro ao conectar no banco de dados!", error.message)
   })
 
-app.listen(3333, () => console.log(`Servidor da Elaine Online na porta ${PORT}!`))
+app.listen(PORT, () => console.log(`Servidor da Elaine Online na porta ${PORT}!`))
