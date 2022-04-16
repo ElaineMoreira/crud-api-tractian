@@ -2,7 +2,7 @@ import express, { Response, Request } from 'express'
 
 const app = express()
 
-app.get('./', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
   return res.send('Oi Elaine, só pra testar!')
 })
 
