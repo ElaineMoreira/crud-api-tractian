@@ -4,7 +4,6 @@ require('dotenv').config();
 
 const app = express()
 
-// mongoose.connect('mongodb+srv://elainemoreira:trybe12345@cluster0.lev3k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 mongoose.connect(process.env.SECRET_CONNECTION_MONGO)
 /** se deu certo */
   .then((data) => {
