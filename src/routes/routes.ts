@@ -1,4 +1,5 @@
 import { Router } from 'express'
+import { createController } from '../controllers/createController';
 import { getAllController } from '../controllers/getAllController';
 import { getByIdController } from '../controllers/getByIdController';
 
@@ -8,7 +9,7 @@ router.get('/all', getAllController.GetAll);
 
 router.get('/all/:id', getByIdController.getById);
 
-router.post('/',);
+router.post('/allCreate', createController.createPost);
 
 router.put('/',);
 
