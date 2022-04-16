@@ -4,6 +4,9 @@ require('dotenv').config();
 
 const app = express()
 
+app.use(express.json());
+// app.use(routes)
+
 mongoose.connect(process.env.SECRET_CONNECTION_MONGO)
 /** se deu certo */
   .then((data) => {
