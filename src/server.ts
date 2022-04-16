@@ -7,7 +7,7 @@ const app = express()
 mongoose.connect(process.env.SECRET_CONNECTION_MONGO)
 /** se deu certo */
   .then((data) => {
-    console.log("Conexão bem sucedida do MongoDB!")
+    console.log("Conexão bem sucedida do MongoDB!", data.version)
   })
 /** se der errado, me mostrar a mensagem de erro */
   .catch((error) => {
