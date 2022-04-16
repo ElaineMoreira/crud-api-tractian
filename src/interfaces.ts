@@ -3,6 +3,7 @@ export interface usuarioPodeCadastrar {
   empresa: string,
   unidade: string,
   ativo: {
+    imagem: string,
     nomeAtivo: string,
     descricao: string,
     modelo: string,
