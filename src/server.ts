@@ -1,11 +1,12 @@
-import express, { Response, Request } from 'express'
+import express from 'express'
 import mongoose from 'mongoose'
+import router from './routes/routes';
 require('dotenv').config();
 
 const app = express()
 
 app.use(express.json());
-// app.use(routes)
+app.use(router)
 
 mongoose.connect(process.env.SECRET_CONNECTION_MONGO)
 /** se deu certo */
@@ -16,9 +17,5 @@ mongoose.connect(process.env.SECRET_CONNECTION_MONGO)
   .catch((error) => {
     console.log("Erro ao conectar no banco de dados!", error.message)
   })
-
-app.get('/', (req: Request, res: Response) => {
-  return res.send('Oi Elaine, só pra testar!')
-});
 
 app.listen(3333, () => console.log(`Servidor da Elaine Online na porta 3333!`))
