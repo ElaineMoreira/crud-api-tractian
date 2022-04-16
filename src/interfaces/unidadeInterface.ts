@@ -1,5 +1,5 @@
 export interface unidadeInterface {
   id: number
-  nome: string
+  nomeUnidade: string
   IdEmpresa: number
 }

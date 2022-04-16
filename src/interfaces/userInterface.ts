@@ -1,6 +1,6 @@
 export interface userInterface {
   id: number
   email: string
-  nome: string
+  nomeUsuario: string
   idUnidade: number
 }

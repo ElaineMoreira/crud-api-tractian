@@ -1,4 +1,5 @@
 export interface ativoInterface {
+  id: number,
   imagem: string,
   nome: string,
   descricao: string,
