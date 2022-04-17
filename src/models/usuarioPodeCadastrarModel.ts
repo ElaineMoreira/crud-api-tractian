@@ -8,12 +8,12 @@ const usuarioPodeCadastrarModel = new Schema({
   unidade: String,
   imagem: String,
   nomeAtivo: String,
-  escricao: String,
+  descricao: String,
   modelo: String,
   proprietario: String,
   status: String,
   nivelDeIntegridade: Number,
-
+  
 }, { timestamps: true })
 
 export default mongoose.model('todasAsInformacoes', usuarioPodeCadastrarModel)

@@ -1,7 +1,8 @@
 import express from 'express'
 import mongoose from 'mongoose'
 import router from './routes/routes';
-require('dotenv').config();
+// require('dotenv').config();
+import "dotenv/config";
 
 const app = express()
 
@@ -9,7 +10,7 @@ app.use(express.json());
 app.use(router)
 
 const SENHA_SECRETA_ENV = process.env.SECRET_CONNECTION_MONGO
-const PORT = 3001
+const PORT = process.env.PORT || process.env.LOCAL_PORT
 
 mongoose.connect(SENHA_SECRETA_ENV)
 /** se deu certo */
