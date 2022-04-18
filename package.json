@@ -4,8 +4,8 @@
   "description": "ENGLISH VERSION",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts"
+    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "build": "docker-compose up"
   },
   "keywords": [],
   "author": "",
