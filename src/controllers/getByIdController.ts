@@ -1,11 +1,11 @@
 import { Request, Response } from "express"
-import usuarioPodeCadastrarModel from "../models/usuarioPodeCadastrarModel";
+import todasAsInformacoes from "../models/usuarioPodeCadastrarModel";
 
 const getByIdController = {
   async getById(req: Request, res: Response): Promise<Response>{
 
-    const { id } = req.body;
-    const getById = await usuarioPodeCadastrarModel.findOne(id);
+    const { id } = req.params;
+    const getById = await todasAsInformacoes.findById(id);
     return res.json(getById)
   }
 }

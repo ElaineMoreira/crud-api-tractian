@@ -2,7 +2,7 @@ import { Request, Response } from "express"
 import todasAsInformacoes from "../models/usuarioPodeCadastrarModel";
 
 const deleteController = {
-  async deleteId(req: Request, res: Response): Promise<Response>{
+  async deleteId(req: Request, res: Response){
 
     const { id } = req.params;
     await todasAsInformacoes.findByIdAndDelete(id)

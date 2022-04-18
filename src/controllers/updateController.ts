@@ -2,7 +2,7 @@ import { Request, Response } from "express"
 import todasAsInformacoes from "../models/usuarioPodeCadastrarModel";
 
 const updateController = {
-  async update(req: Request, res: Response): Promise<Response> {
+  async update(req: Request, res: Response) {
 
     const { id } = req.params;
 
