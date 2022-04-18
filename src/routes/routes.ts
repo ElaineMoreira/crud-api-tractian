@@ -1,5 +1,6 @@
 import { Router } from 'express'
 import { createController } from '../controllers/createController';
+import { deleteController } from '../controllers/deleteController';
 import { getAllController } from '../controllers/getAllController';
 import { getByIdController } from '../controllers/getByIdController';
 import { updateController } from '../controllers/updateController';
@@ -14,6 +15,6 @@ router.post('/allCreate', createController.createPost);
 
 router.put('/all/:id', updateController.update);
 
-router.delete('/',);
+router.delete('/all/:id', deleteController.deleteId);
 
 export default router
