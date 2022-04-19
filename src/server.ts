@@ -10,7 +10,7 @@ app.use(router)
 
 // const SENHA_SECRETA_ENV = process.env.SECRET_CONNECTION_MONGO
 // const PORT = process.env.PORT
-const PORT = 3003
+const PORT = 3003 || process.env.PORT
 
 // mongoose.connect(SENHA_SECRETA_ENV)
 mongoose.connect('mongodb+srv://elainemoreira:trybe12345@cluster0.lev3k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')

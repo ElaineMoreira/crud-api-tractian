@@ -7,7 +7,8 @@
   "description": "ENGLISH VERSION",
   "main": "server.js",
   "scripts": {
-    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "start": "node server",
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
     "build": "docker-compose up",
     "test": "mocha usuarioPodeCadastrarModel.spec.ts"
   },
