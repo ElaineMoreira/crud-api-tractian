@@ -7,10 +7,11 @@
   "description": "ENGLISH VERSION",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
     "build": "docker-compose up",
-    "test": "mocha usuarioPodeCadastrarModel.spec.ts"
+    "test": "mocha usuarioPodeCadastrarModel.spec.ts",
+    "compila": "npx tsc"
   },
   "keywords": [],
   "author": "",
