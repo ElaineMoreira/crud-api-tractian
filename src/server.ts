@@ -13,7 +13,7 @@ app.use(router)
 
 // mongoose.connect(SENHA_SECRETA_ENV)
 mongoose.connect('mongodb+srv://elainemoreira:trybe12345@cluster0.lev3k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
-/** se deu certo */
+/** se deu certo .*/
   .then((data) => {
     console.log("Conexão bem sucedida do MongoDB!", data.version)
   })
