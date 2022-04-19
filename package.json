@@ -1,8 +1,11 @@
 {
   "name": "crud_tractian",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.8"
+  },
   "description": "ENGLISH VERSION",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
     "build": "docker-compose up",
