@@ -17,5 +17,5 @@ const usuarioPodeCadastrarModel = new mongoose_1.Schema({
     proprietario: String,
     status: String,
     nivelDeIntegridade: Number,
-}, { timestamps: true });
+}, { timestamps: true, versionKey: false, });
 exports.default = mongoose_2.default.model('todasAsInformacoes', usuarioPodeCadastrarModel);

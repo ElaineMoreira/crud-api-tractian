@@ -14,6 +14,6 @@ const usuarioPodeCadastrarModel = new Schema({
   status: String,
   nivelDeIntegridade: Number,
   
-}, { timestamps: true })
+}, { timestamps: true, versionKey: false, })
 
 export default mongoose.model('todasAsInformacoes', usuarioPodeCadastrarModel)
