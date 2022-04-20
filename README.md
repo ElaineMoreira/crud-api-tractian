@@ -123,6 +123,9 @@ Para executar o aplicativo, siga estas instruções.
         <img src="https://img.shields.io/badge/-Elaine Moreira-black?style=flat&logo=Github&logoColor=white">
       </a>
     </li>
+    <li>
+        <a href="https://elainemoreira.netlify.app/" target="_blank"><img src="https://img.shields.io/badge/-Portifolio-%230077B5?style=for-the-badge&logo=portifolio&logoColor=white" target="_blank"></a>
+    </li>
 </ul>
 
 ---
