@@ -9,12 +9,11 @@ app.use(express.json());
 app.use(router)
 
 const SENHA_SECRETA_ENV = process.env.SECRET_CONNECTION_MONGO
-// const PORT = process.env.PORT
+
 const PORT = process.env.PORT || 3003
 
-// mongoose.connect('mongodb+srv://elainemoreira:trybe12345@cluster0.lev3k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority')
 mongoose.connect(`${SENHA_SECRETA_ENV}`)
-/** se deu certo .*/
+/** se deu certo retorna */
   .then((data) => {
     console.log("Conexão bem sucedida do MongoDB!", data.version)
   })
@@ -23,5 +22,4 @@ mongoose.connect(`${SENHA_SECRETA_ENV}`)
     console.log("Erro ao conectar no banco de dados!", error.message)
   })
 
-// app.listen(PORT, () => console.log(`Servidor da Elaine Online na porta ${PORT}!`))
 app.listen(PORT, () => console.log(`Servidor da Elaine Online na porta ${PORT!}`))
