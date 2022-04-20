@@ -1,5 +1,18 @@
 # crud_TRACTIAN
 
+<h3>Imagine a seguinte situação:<h3>
+<br/>
+
+Nossos usuários, Emerson e Roberta, são gerentes de manutenção da Industria Freios Supremos (fabricante de autopeças), e possuem 2 unidades e 10 ativos (máquinas) no total. Eles gostariam de poder registrar e visualizar ambas as unidades separadamente, bem como ter uma visão geral que condensa os dados das duas unidades.
+
+Desafio
+
+Construa um CRUD onde o usuário possa cadastrar empresas, unidades, ativos e usuários.
+
+    • Existem três tipos de status: Em execução, Alerta, Parado;
+    • O nível de saúde precisa estar entre 0% e 100%.
+
+
 <h3 id="features">⚙ Recursos</h3>
 
 - Usuário pode cadastrar, deletar, atualizar e buscar empresas, unidades ativos e usuarios.
@@ -98,18 +111,6 @@ Para executar o aplicativo, siga estas instruções.
 8. Para criar, atualizar e deletar dados no banco, aconselha-se a utilização do Insomnia para melhor visualização.   
 <br/>  
 <br/>
-
-<h3>Imagine a seguinte situação:<h3>
-<br/>
-
-Nossos usuários, Emerson e Roberta, são gerentes de manutenção da Industria Freios Supremos (fabricante de autopeças), e possuem 2 unidades e 10 ativos (máquinas) no total. Eles gostariam de poder registrar e visualizar ambas as unidades separadamente, bem como ter uma visão geral que condensa os dados das duas unidades.
-
-Desafio
-
-Construa um CRUD onde o usuário possa cadastrar empresas, unidades, ativos e usuários.
-
-    • Existem três tipos de status: Em execução, Alerta, Parado;
-    • O nível de saúde precisa estar entre 0% e 100%.
 
 ---
 
