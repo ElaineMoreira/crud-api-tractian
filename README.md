@@ -73,6 +73,27 @@ Para executar o aplicativo, siga estas instruções.
    ```
    https://crud-api-tractian.herokuapp.com/all/626069c8cba207d2f524e918
    ```
+
+9. Como fica a estrutura dos dados
+
+ ```
+{
+	"_id": "626069c8cba207d2f524e918",
+	"nome": "flocos ",
+	"email": "elaine@email.com",
+	"empresa": "vivo",
+	"unidade": "belo horizonte",
+	"imagem": "foto",
+	"nomeAtivo": "tim",
+	"descricao": "descricao",
+	"modelo": "modelo7",
+	"proprietario": "elaine",
+	"status": "em alerta",
+	"nivelDeIntegridade": 70,
+	"createdAt": "2022-04-20T20:15:04.717Z",
+	"updatedAt": "2022-04-20T20:15:04.717Z"
+}
+```
 <br/>
 8. Para criar, atualizar e deletar dados no banco, aconselha-se a utilização do Insomnia para melhor visualização.   
 <br/>  
