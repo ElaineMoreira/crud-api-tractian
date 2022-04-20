@@ -8,12 +8,12 @@ const app = express()
 app.use(express.json());
 app.use(router)
 
-// const SENHA_SECRETA_ENV = process.env.SECRET_CONNECTION_MONGO
+const SENHA_SECRETA_ENV = process.env.SECRET_CONNECTION_MONGO
 // const PORT = process.env.PORT
 const PORT = 3003 || process.env.PORT
 
 // mongoose.connect(SENHA_SECRETA_ENV)
-mongoose.connect(process.env.SECRET_CONNECTION_MONGO)
+mongoose.connect(`${SENHA_SECRETA_ENV}`)
 /** se deu certo .*/
   .then((data) => {
     console.log("Conexão bem sucedida do MongoDB!", data.version)
