@@ -13,6 +13,7 @@
   <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/mongodb/mongodb-original.svg" alt="mongo" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/docker/docker-original.svg" alt="docker" width="40" height="40"/>
   <img src="https://raw.githubusercontent.com/devicons/devicon/1119b9f84c0290e0f0b38982099a2bd027a48bf1/icons/heroku/heroku-original.svg" alt="heroku" width="40" height="40"/>
+   <img src=https://seeklogo.com/images/I/insomnia-logo-A35E09EB19-seeklogo.com.png alt="insomnia" width="40" height="40"/>
 
 <br/>
 </div>
@@ -54,13 +55,31 @@ Para executar o aplicativo, siga estas instruções.
    ```sh
    npm run dev
    ```
+
 5. Para subir o servidor e logar no banco com docker
 
    ```
    npm run docker:up
    ```
 
-Imagine a seguinte situação:
+6. Para visualizar itens que já estão no banco de dados digite no navegador
+
+   ```
+   https://crud-api-tractian.herokuapp.com/all
+   ```   
+
+7. Para visualizar itens que já estão no banco de dados buscados por id digite o exemplo abaixo no navegador
+
+   ```
+   https://crud-api-tractian.herokuapp.com/all/626069c8cba207d2f524e918
+   ```
+<br/>
+8. Para criar, atualizar e deletar dados no banco, aconselha-se a utilização do Insomnia para melhor visualização.   
+<br/>  
+<br/>
+
+<h3>Imagine a seguinte situação:<h3>
+<br/>
 
 Nossos usuários, Emerson e Roberta, são gerentes de manutenção da Industria Freios Supremos (fabricante de autopeças), e possuem 2 unidades e 10 ativos (máquinas) no total. Eles gostariam de poder registrar e visualizar ambas as unidades separadamente, bem como ter uma visão geral que condensa os dados das duas unidades.
 
@@ -68,11 +87,6 @@ Desafio
 
 Construa um CRUD onde o usuário possa cadastrar empresas, unidades, ativos e usuários.
 
-Importante:
-    • Cada ativo deve ter uma imagem, nome, descrição, modelo, proprietário, status e nível de integridade;
-    • Cada ativo faz parte de uma unidade;
-    • Cada unidade faz parte de uma empresa;
-    • Cada usuário faz parte de uma empresa;
     • Existem três tipos de status: Em execução, Alerta, Parado;
     • O nível de saúde precisa estar entre 0% e 100%.
 
